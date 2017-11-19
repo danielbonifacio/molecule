@@ -1,0 +1,43 @@
+{
+  "name": "Molecule",
+  "version": "1.0.0",
+  "description": "Sistema de gestão simples",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns",
+    "package-win": "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=idt/icon.ico ",
+    "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=id/explorer_icon.png"
+  },
+  "repository": "https://github.com/danielbonifacio/molecule",
+  "keywords": [
+    "SimpleGest",
+    "gestao financeira",
+    "gerir",
+    "vendas",
+    "simples"
+  ],
+  "author": "Daniel Bonifácio Inc.",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2",
+    "electron-winstaller": "^2.6.3",
+    "live-reload": "^1.1.0",
+    "mousetrap": "^1.6.1"
+  },
+  "dependencies": {
+    "file-exists": "^4.0.0",
+    "lokijs": "^1.5.0",
+    "read-file-utf8": "^1.1.1",
+    "v-mask": "^0.1.0",
+    "vue": "1.1.0",
+    "vue-round-filter": "^1.1.2",
+    "mousetrap": "^1.6.1"
+  },
+  "build": {
+    "win": {
+      "requestedExecutionLevel": "highestAvailable"
+    }
+  }
+}

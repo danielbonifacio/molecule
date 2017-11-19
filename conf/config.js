@@ -1,0 +1,1 @@
+var lang = require('./lang/pt-br.js')
