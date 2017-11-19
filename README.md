@@ -20,7 +20,7 @@ Para clonar este repositório e iniciar o desenvolvimento, você preciso do [Git
 
 ```bash
 # Clone o repositório
-git clone https://github.com/danielbonifacio/danielbonifacio.github.io/tree/master/molecule
+git clone https://github.com/danielbonifacio/molecule
 # Entre na pasta do repositório
 cd molecule
 # Instale as dependencias
