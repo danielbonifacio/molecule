@@ -16,7 +16,7 @@ Você pode aprender um pouco mais sobre o electron neste link: [Quick Start Guid
 
 ## Como usar
 
-Para clonar este repositório e iniciar o desenvolvimento, você precisa do [Git](https://git-scm.com) e do [Node](https://nodejs.org/en/download/) (e instalar o npm [npm](http://npmjs.com)) no seu computador. Digite no seu terminal:
+Para clonar este repositório e iniciar o desenvolvimento, você precisa do [Git](https://git-scm.com) e do [Node](https://nodejs.org/en/download/) (e instalar o [npm](http://npmjs.com)). Digite no seu terminal:
 
 ```bash
 # Clone o repositório
