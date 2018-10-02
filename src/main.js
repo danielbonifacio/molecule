@@ -1,18 +1,27 @@
 const { app, BrowserWindow } = require('electron');
-const { index } = require('./core/paths');
-
+const path = require('path');
+const setupPug = require('electron-pug');
+const locals = {/* ...*/}
 let win = null;
 
-function createMainWindow() {
+async function createMainWindow() {
+  try {
+    let pug = await setupPug({pretty: true}, locals)
+    pug.on('error', err => console.error('electron-pug error', err))
+  } catch (err) {
+    // Could not initiate 'electron-pug'
+  }
+
   win = new BrowserWindow({
-    width: 900,
-    height: 600,
+    width: 1270,
+    height: 690,
+    minHeight: 690,
+    minWidth: 1270,
     autoHideMenuBar: true,
+    frame: false,
   });
 
-  win.loadFile(index);
-
-  console.log()
+  win.loadFile(path.resolve(__dirname, './app.pug'));
 
   win.on('closed', () => {
     win = null;

@@ -1,0 +1,42 @@
+#close {
+  &:after {
+    content: '';
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+#minimize {
+  &:after {
+    content: '';
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/minimize.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+#toggle-maximize {
+  &:after {
+    content: '';
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/maximize.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &.maximized:after {
+    background-image: url('../img/restore.svg');
+  }
+}

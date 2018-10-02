@@ -1,0 +1,49 @@
+#gestao-app .tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60px;
+  background-color: light;
+  border-bottom: 1px solid #ddd;
+}
+#gestao-app .tabs .tab {
+  min-width: 200px;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+#gestao-app .tabs .tab .icon {
+  font-size: 16px;
+  color: rgba(29, 35, 40, 0.7);
+  margin-right: 10px;
+}
+#gestao-app .tabs .tab.active {
+  border-right: 1px solid #ddd;
+  position: relative;
+}
+#gestao-app .tabs .tab.active:not(:first-child) {
+  border-left: 1px solid #ddd;
+}
+#gestao-app .tabs .tab.active:after {
+  height: 1px;
+  width: 100%;
+  background-color: #FFFFFF;
+  bottom: -1px;
+  left: 0;
+  content: "";
+  display: block;
+  position: absolute;
+}
+#gestao-app .tabs .tab:hover {
+  background-color: rgba(29, 35, 40, 0.025);
+}
+#gestao-app .tabs .tab:hover:not(.active) {
+  border-color: rgba(15, 110, 190, 0.1);
+}
+
+/*# sourceMappingURL=gestao.css.map */

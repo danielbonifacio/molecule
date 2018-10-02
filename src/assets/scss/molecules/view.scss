@@ -1,0 +1,20 @@
+.view {
+  padding: 20px;
+  user-select: none;
+  overflow-y: auto;
+
+  height: calc(100vh - 97px);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background-color: #f2f2f2;
+}
+::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #ccc;
+}

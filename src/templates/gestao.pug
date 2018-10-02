@@ -1,0 +1,56 @@
+#gestao-app
+  ul.tabs
+    li.tab
+      span.icon
+        i.fa.fa-address-card
+      span.text Clientes
+    li.tab.active
+      span.icon
+        i.fa.fa-shopping-basket
+      span.text Produtos
+    li.tab
+      span.icon
+        i.fa.fa-calendar-check
+      span.text Vendas
+    li.tab
+      span.icon
+        i.fa.fa-file-invoice-dollar
+      span.text Relatórios
+
+  #produtos-view.view
+    .form
+      .title Cadastrar novo produto
+      form#produtos
+        .row
+          .labeled
+            label Nome do produto
+            input(type="text")
+          .labeled
+            label Custo produto
+            input(type="number")
+          .labeled
+            label Revenda produto
+            input(type="number")
+          .labeled
+            label Estoque
+            input(type="number")
+
+        button.submit Cadastrar
+
+    .table
+      .header
+        .row
+          .ceil Nome
+          .ceil.right Preço
+          .ceil.right Estoque
+          .ceil Ações
+      .body
+        each val in [1, 2, 3, 4, 5, 6, 7, 8]
+          .row
+            .ceil(title="AMD FX 8120 Eight Core CPU with vRAM") AMD FX 8120 Eight Core CPU with vRAM
+            .ceil.right R$649,90
+            .ceil.right 320
+            .ceil
+              button.small deletar
+              button.small editar
+              button.small ver detalhes

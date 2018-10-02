@@ -1,0 +1,71 @@
+#close:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#minimize:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/minimize.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#toggle-maximize:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/maximize.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#toggle-maximize.maximized:after {
+  background-image: url("../img/restore.svg");
+}
+
+#window-frame {
+  background-color: #FFFFFF;
+  height: 37px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 15px;
+  user-select: none;
+  -webkit-app-region: drag;
+  border-bottom: 1px solid #ddd;
+}
+#window-frame .window-title {
+  color: #1D2328;
+  font-size: 15px;
+}
+#window-frame .window-controllers {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+}
+#window-frame .window-controllers .controller {
+  height: 100%;
+  width: 55px;
+  -webkit-app-region: no-drag;
+}
+#window-frame .window-controllers .controller:hover {
+  background-color: #eceff1;
+}
+#window-frame .window-controllers .controller:hover#close {
+  background-color: #e60000;
+}
+#window-frame.blur .window-controllers,
+#window-frame.blur .window-title {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=window.frame.css.map */

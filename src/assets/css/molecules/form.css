@@ -1,0 +1,73 @@
+.form::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.form .title {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.form .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
+}
+.form .labeled {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  grid-column-start: span 1;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+}
+.form .labeled label {
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: rgba(29, 35, 40, 0.6);
+}
+.form .labeled input:not([type=submit]) {
+  height: 42px;
+  width: 100%;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.15s linear;
+}
+.form .labeled input:not([type=submit]):hover {
+  border-color: #c4c4c4;
+}
+.form .labeled input:not([type=submit]):focus {
+  border-color: #aaaaaa;
+}
+.form .submit {
+  float: right;
+}
+
+button,
+.btn {
+  height: 42px;
+  padding: 0 15px;
+  background-color: #0F6EBE;
+  border: 1px solid #0F6EBE;
+  color: #FFFFFF;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+button:hover, button:focus,
+.btn:hover,
+.btn:focus {
+  border-color: #0F6EBE;
+  color: #0F6EBE;
+  background-color: #FFFFFF;
+}
+button.small,
+.btn.small {
+  padding: 3px 6px;
+  font-size: 12px;
+  height: auto;
+}
+
+/*# sourceMappingURL=form.css.map */

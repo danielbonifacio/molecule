@@ -1,0 +1,88 @@
+@import "../vars";
+
+.form {
+
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  .title {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+  }
+
+  .labeled {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-column-start: span 1;
+    margin-bottom: 15px;
+
+    justify-content: flex-start;
+
+    label {
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: rgba($dark, .6);
+    }
+
+    input:not([type=submit]) {
+      height: 42px;
+      width: 100%;
+      padding: 0 15px;
+
+      border: 1px solid $grey;
+      outline: none;
+
+      transition: .15s linear;
+
+      &:hover {
+        border-color: darken($grey, 10%);
+      }
+
+      &:focus {
+        border-color: darken($grey, 20%);
+      }
+    }
+  }
+
+  .submit {
+    float: right;
+  }
+}
+
+button,
+.btn {
+  height: 42px;
+  padding: 0 15px;
+  background-color: $primary;
+  border: 1px solid $primary;
+  color: $light;
+
+  transition: .15s ease-in-out;
+  cursor: pointer;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $primary;
+    color: $primary;
+    background-color: $light;
+  }
+
+  &.small {
+    padding: 3px 6px;
+    font-size: 12px;
+    height: auto;
+  }
+}

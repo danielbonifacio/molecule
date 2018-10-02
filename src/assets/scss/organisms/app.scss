@@ -1,0 +1,29 @@
+@import "../molecules/window.frame";
+@import "../molecules/lateral";
+@import "../molecules/content";
+@import "../molecules/form";
+@import "../molecules/view";
+@import "../molecules/table";
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  #lateral-menu {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+
+  #window-frame {
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 1;
+  }
+
+  #content {
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 1;
+  }
+}

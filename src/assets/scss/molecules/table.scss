@@ -1,0 +1,56 @@
+@import "../vars";
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+
+  .header,
+  .body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .row {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 4fr 1fr 1fr 2fr;
+      align-items: center;
+
+      .ceil {
+        flex-grow: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding: 10px 15px;
+        &.right {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .header {
+    border: 1px solid $grey;
+    border-bottom: none;
+    .row {
+      background-color: lighten($grey, 10%);
+    }
+  }
+
+  .body {
+    border: 1px solid $grey;
+    border-top: none;
+
+    .row {
+      color: $dark;
+      font-size: 14px;
+      &:hover {
+        background-color: lighten($grey, 11%);
+      }
+
+      .ceil:hover {
+        background-color: lighten($grey, 5%);
+      }
+    }
+  }
+}
